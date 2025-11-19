@@ -34,3 +34,10 @@ export const PasswordNotClearable: Story = {
     clearable: false
   }
 };
+
+export const TextClearable: Story = {
+  args: {
+    type: "text",
+    clearable: true
+  }
+};
