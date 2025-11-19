@@ -19,10 +19,23 @@ export default function Toast({
     function removeShowing() {
         toastRef.current?.classList.remove("showing");
     }
+    function returnTimerTime(type: "info" | "success" | "error" | "warning") {
+        switch (type) {
+            case "info":
+                return 3000;
+            case "success":
+                return 4000;
+            case "error":
+                return 5000;
+            case "warning":
+                return 6000;
+        }
+    }
+
     useEffect(() => {
         const timer = setTimeout(() => {
             removeShowing();
-        }, 5000);
+        }, returnTimerTime(type));
         return () => clearTimeout(timer);
     }, [type]);
     return (
