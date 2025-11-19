@@ -8,6 +8,7 @@
     transition: opacity 0.3s ease-in;
     opacity: 0;
     opacity: 0;
+    color: black;
     right: 0;
     bottom: 0;
     & h2 {
@@ -16,19 +17,32 @@
     }
 }
 
+.close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: url("../../assets/x-small.svg") no-repeat center;
+    border: none;
+    color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .toast.showing {
     transition: opacity 0.5s ease-out;
     opacity: 1;
 }
 .toast.info {
-    background-color: #045597;
+    background-color: #0b82e4;
 }
 .toast.success {
-    background-color: #006d04;
+    background-color: #05f00d;
 }
 .toast.error {
-    background-color: #ce3a2f;
+    background-color: #f31404;
 }
 .toast.warning {
-    background-color: #c95101;
+    background-color: #ff6600;
 }
