@@ -7,7 +7,7 @@ type MenuItem = {
 };
 type SidebarMenuProps = {
     state: "open" | "closed";
-    menu?: MenuItem[] | MenuItem;
+    menu?: MenuItem[];
 };
 
 function MenuItem({ item }: { item: MenuItem }) {
