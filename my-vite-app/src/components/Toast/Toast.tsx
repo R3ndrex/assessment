@@ -11,9 +11,11 @@ function capitalize(str: string) {
 export default function Toast({
     type,
     text,
+    duration = 0,
 }: {
     type: "info" | "success" | "error" | "warning";
     text: string;
+    duration?: number;
 }) {
     const toastRef = useRef<HTMLDivElement>(null);
     function removeShowing() {
@@ -25,9 +27,9 @@ export default function Toast({
                 return 3000;
             case "success":
                 return 4000;
-            case "error":
-                return 5000;
             case "warning":
+                return 5000;
+            case "error":
                 return 6000;
         }
     }
@@ -35,7 +37,7 @@ export default function Toast({
     useEffect(() => {
         const timer = setTimeout(() => {
             removeShowing();
-        }, returnTimerTime(type));
+        }, duration || returnTimerTime(type));
         return () => clearTimeout(timer);
     }, [type]);
     return (
