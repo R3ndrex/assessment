@@ -7,7 +7,9 @@ function App() {
         <>
             <h1>Components</h1>
             <Input type="password" clearable />
-            <Toast />
+            <Toast type="info" text="This is an info toast" />
+            <Toast type="success" text="This is a success toast" />
+            <Toast type="error" text="This is an error toast" />
             <SidebarMenu />
         </>
     );
