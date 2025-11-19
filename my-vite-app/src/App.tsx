@@ -9,7 +9,7 @@ function App() {
             <Toast type="info" text="This is an info toast" />
             <Toast type="success" text="This is a success toast" />
             <Toast type="error" text="This is an error toast" />
-            <SidebarMenu />
+            <SidebarMenu state="closed" />
         </>
     );
 }
