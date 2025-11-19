@@ -13,3 +13,15 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {}
 };
+
+export const Open: Story = {
+  args: {
+    state: "open"
+  }
+};
+
+export const Closed: Story = {
+  args: {
+    state: "closed"
+  }
+};
