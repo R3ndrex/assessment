@@ -30,6 +30,8 @@ Start Storybook in development mode
 
 ### Input
 
+Text input with an optional clear button. It supports two types, password and text, and keeps the entered value in state. When clearable is enabled, a small “X” button appears inside the input, letting the user instantly clear the text. The layout uses absolute positioning so the clear button sits on the right inside the input field
+
 Password Clearable
 ![Password Clearable](./images/password-clearable.png)
 
@@ -42,6 +44,8 @@ Text Not Clearable
 
 ### Toast
 
+Displays a message of type info, success, error, or warning. It automatically appears with a smooth fade-in animation and disappears after a set duration, which can be customized or defaults based on the type. Each toast shows a capitalized heading with the type and the message text. Users can also manually close it by clicking the small “X” button
+
 Info
 ![Toast Info](./images/toast-info.png)
 Success
@@ -52,6 +56,8 @@ Error
 ![Toast Error](./images/toast-error.png)
 
 ### Sidebar Menu
+
+This is a slide in Sidebar menu with nested, expandable items. It can be toggled with a button and closes when clicking outside, with arrows indicating submenus
 
 Open no text
 ![Open menu no Text](./images/open-no-text.png)
