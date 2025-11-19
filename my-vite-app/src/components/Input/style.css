@@ -1,0 +1,22 @@
+.input-div {
+    position: relative;
+    width: min-content;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 40px;
+}
+.clear-button {
+    position: absolute;
+    right: 0;
+    background-image: url("../../assets/x-small.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
