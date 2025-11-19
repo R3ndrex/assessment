@@ -44,3 +44,11 @@ export const Warning: Story = {
     text: "This is warning toast component!"
   }
 };
+
+export const OneSecondInfo: Story = {
+  args: {
+    type: "info",
+    text: "text",
+    duration: 1000
+  }
+};
