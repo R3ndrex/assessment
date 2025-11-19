@@ -1,15 +1,34 @@
 .toast {
     padding: 16px;
-    background-color: #333;
+    min-width: 50px;
     color: #fff;
+    text-align: start;
     border-radius: 4px;
+    position: absolute;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+    & h2 {
+        margin: 0 0 8px 0;
+        font-size: 18px;
+    }
+}
+
+.toast.showing {
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
 }
 .toast.info {
-    background-color: #2196f3;
+    background-color: #045597;
 }
 .toast.success {
-    background-color: #4caf50;
+    background-color: #006d04;
 }
 .toast.error {
-    background-color: #f44336;
+    background-color: #ce3a2f;
+}
+.toast.warning {
+    background-color: #c95101;
 }
